@@ -1,8 +1,8 @@
 import firebase from 'firebase';
-
+import apiKey from 'secrets';
 
   var firebaseConfig = {
-    apiKey: "AIzaSyBdITG1RRMxv8we8YpovRU2dzaFdxo_FtM",
+    apiKey: apiKey,
     authDomain: "tutoring-2ee5b.firebaseapp.com",
     databaseURL: "https://tutoring-2ee5b.firebaseio.com",
     projectId: "tutoring-2ee5b",
@@ -15,5 +15,3 @@ import firebase from 'firebase';
   const fire = firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   export default fire;
-
-  
